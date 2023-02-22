@@ -3,7 +3,7 @@ package ui.tests.login;
 import com.github.javafaker.Faker;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import ui.page.MenuElement;
+import ui.page.MenuEl;
 import ui.page.login.LoginPage;
 import ui.tests.TestBase;
 
@@ -14,7 +14,7 @@ public class LoginTest extends TestBase {
 
     LoginPage loginPage;
 
-    MenuElement menu;
+    MenuEl menu;
 
     Faker faker = new Faker();
 
@@ -28,7 +28,7 @@ public class LoginTest extends TestBase {
     public void LoginTest () {
         loginPage = new LoginPage(driver);
         loginPage.getLogin(userMail, password );
-        menu = new MenuElement(driver);
+        menu = new MenuEl(driver);
 
         Assert.assertTrue(menu.isAddNewContactMenuLinkDisplayed(),"The main page did not load");
     }

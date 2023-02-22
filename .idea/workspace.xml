@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b6a549-c6b3-4c39-9ee7-d21988707c10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="13b6a549-c6b3-4c39-9ee7-d21988707c10" name="Changes" comment="demo0.0.3">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/tests/contact/AddNewContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/page/AddContactWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/page/AddContactWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/page/MenuElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/page/MenuEl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/page/contact/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/page/contact/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/tests/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/login/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ui.tests" />
@@ -64,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676927018612</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="demo0.0.3">
+      <created>1677090066587</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677090066587</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

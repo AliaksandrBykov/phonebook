@@ -26,7 +26,7 @@ public class AddContactWindow {
     @FindBy(xpath = "//*[@class='btn btn-primary']")
     private WebElement saveButton;
 
-    public void getLogin (String firstName,String lastName,String about) {
+    public void fillData(String firstName,String lastName,String about) {
         firstNameInput.clear();
         firstNameInput.sendKeys(firstName);
         lastNameInput.clear();
