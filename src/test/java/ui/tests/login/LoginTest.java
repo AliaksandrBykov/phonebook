@@ -26,13 +26,16 @@ public class LoginTest extends TestBase {
 
     @Test
     public void LoginTest () {
+        logger.info("Test date:\nlogin - " + userMail + "\npassword - "  + password);
         loginPage = new LoginPage(driver);
         loginPage.getLogin(userMail, password );
         menu = new MenuEl(driver);
 
         Assert.assertTrue(menu.isAddNewContactMenuLinkDisplayed(),"The main page did not load");
     }
+    @Test
     public void setErrorLoginPasswordMessage() {
+        logger.info("Test date:\n login - " + wrongMail + "\npassword -"  + wrongPassword);
         loginPage = new LoginPage(driver);
         loginPage.getLogin(wrongMail, wrongPassword);
 

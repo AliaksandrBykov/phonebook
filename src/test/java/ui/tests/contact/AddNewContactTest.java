@@ -33,10 +33,12 @@ public class AddNewContactTest extends TestBase {
 
     @Test
     public void addNewContactTest() {
+        logger.info("Test date:\nlogin - " + firstName + "\npassword - "  + lastName + "\nabout -" + about);
         menu = new MenuEl(driver);
         menu.clickNewContact();
         addContactWindow = new AddContactWindow(driver);
         addContactWindow.fillData(firstName, lastName, about);
+        contactPage = new ContactPage(driver);
 
 //        Assert.assertEquals(contactPage.firstNameField(), firstName);
 //        Assert.assertEquals(contactPage.lastNameField(), lastName);

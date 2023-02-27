@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b6a549-c6b3-4c39-9ee7-d21988707c10" name="Changes" comment="demo0.0.3">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/tests/contact/AddNewContactTest.java" afterDir="false" />
+    <list default="true" id="13b6a549-c6b3-4c39-9ee7-d21988707c10" name="Changes" comment="demo0.3">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logback-test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/page/AddContactWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/page/AddContactWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/page/MenuElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/page/MenuEl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/page/contact/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/page/contact/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/tests/contact/AddNewContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/contact/AddNewContactTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/tests/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/login/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +40,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "terminal"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -79,11 +79,22 @@
       <option name="project" value="LOCAL" />
       <updated>1677090066587</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="demo0.0.3">
+      <created>1677099371214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677099371214</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="demo0.0.3" />
     <option name="LAST_COMMIT_MESSAGE" value="demo0.0.3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
