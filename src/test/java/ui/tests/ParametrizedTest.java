@@ -57,6 +57,4 @@ public class ParametrizedTest extends TestBase {
         Assert.assertEquals(info.get("contact description"), about);
 
     }
-
-
 }
