@@ -1,6 +1,9 @@
 package ui.tests;
 
+import org.apache.commons.io.FileUtils;
 import org.checkerframework.checker.units.qual.m;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
@@ -9,6 +12,8 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.time.Duration;
 
@@ -17,6 +22,8 @@ public class TestBase {
 
     protected final String EMAIL = "test@gmail.com";
     protected final String PASSWORD = "test@gmail.com";
+
+    String screenName = "screen" + System.currentTimeMillis() + ".pmg";
 
     protected Logger logger = LoggerFactory.getLogger(TestBase.class);
     @BeforeMethod
@@ -29,25 +36,31 @@ public class TestBase {
         logger.info(m.getName() + "start");
     }
 
-    @AfterMethod
-    public void tearDown(Method m){
-        logger.info(m.getName() + "stop");
-        driver.quit();
-        logger.info("Stop test");
+//    @AfterMethod
+//    public void tearDown(Method m){
+//        logger.info(m.getName() + "stop");
+//        driver.quit();
+//        logger.info("Stop test");
 //        logger.info("============================================================");
-    }
+
     @AfterMethod(alwaysRun = true)
-    public void testInformation(ITestResult result){
+    public void testInformation(ITestResult result, Method m) throws IOException {
         logger.info(result.getMethod().getTestClass().toString());
         if (result.isSuccess()){
             logger.info("PASSED " + result.getMethod().getMethodName());
         } else {
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(scrFile, new File("C:\\Users\\Admin\\IdeaProjects\\phonebookQA44\\src\\test\\screenshot\\" + screenName));
             logger.info("FAILED " + result.getMethod().getMethodName());
+            logger.info("The screenshot is - src\\test\\screenshot" + screenName);
             logger.info(result.getThrowable().toString());
         }
 
         logger.info("============================================================");
-
+        logger.info(m.getName() + "stop");
+        driver.quit();
+        logger.info("Stop test");
     }
 
 }
+
